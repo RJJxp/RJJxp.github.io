@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="X3399环境配置, 油瓶">
+    <meta name="keywords" content="师兄开始抓仿真, 油瓶">
     <meta name="description" content="你来啦~欢迎欢迎">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>X3399环境配置 | 油瓶</title>
+    <title>师兄开始抓仿真 | 油瓶</title>
     <link rel="icon" type="image/svg+xml" href="/eye-solid.svg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -245,7 +245,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = '0596234a75ed7565ba66090ad3c3ac304bb2f3c82a845db7f904331bc64ec452';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -258,12 +258,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">X3399环境配置</h1>
+                    <h1 class="description center-align post-title">师兄开始抓仿真</h1>
                 </div>
             </div>
         </div>
@@ -289,8 +289,12 @@
                                 <span class="chip bg-color">嘉定</span>
                             </a>
                         
-                            <a href="/tags/%E5%A4%A7%E5%9B%9B/">
-                                <span class="chip bg-color">大四</span>
+                            <a href="/tags/%E7%A0%94%E4%B8%80/">
+                                <span class="chip bg-color">研一</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%9A%91%E5%81%87/">
+                                <span class="chip bg-color">暑假</span>
                             </a>
                         
                     </div>
@@ -301,8 +305,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%B7%A5%E4%BD%9C/" class="post-category">
-                                工作
+                            <a href="/categories/%E6%97%A5%E8%AE%B0/" class="post-category">
+                                日记
                             </a>
                         
                     </div>
@@ -314,7 +318,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-12-07
+                    2020-08-12
                 </div>
                 
 
@@ -323,7 +327,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.8k
+                    445
                 </div>
                 
 
@@ -340,250 +344,17 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Raccoon-项目环境配置"><a href="#Raccoon-项目环境配置" class="headerlink" title="Raccoon 项目环境配置"></a>Raccoon 项目环境配置</h1><p>本文档旨在说明</p>
-<p>在Ubuntu1604的系统下, 向<font color=red><strong>基于arm64架构的X3399</strong></font>的emmc中烧制系统Ubuntu 1604 LTS</p>
-<p>并在X3399上对项目 <code>Raccoon</code> 的环境进行配置</p>
-<p>对于amd64架构的机器, 大同小异</p>
-<p>Ubuntu 1604 LTS极易安装, 只进行 <a href="#2.%E9%85%8D%E7%BD%AERaccoon%E5%B7%A5%E4%BD%9C%E7%8E%AF%E5%A2%83">2.配置Raccoon工作环境</a> 即可</p>
-<h2 id="1-配置-Ubuntu-16-04-LTS"><a href="#1-配置-Ubuntu-16-04-LTS" class="headerlink" title="1.配置 Ubuntu 16.04 LTS"></a>1.配置 Ubuntu 16.04 LTS</h2><p><font color=red><strong>在基于arm64架构的机器X3399上配置Ubuntu 1604 LTS</strong></font></p>
-<p> <a target="_blank" rel="noopener" href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w5003-16763120850.1.2075158ezDbJeZ&id=544731661336&scene=taobao_shop">X3399淘宝地址</a> 仔细阅读, 其中资料比较详细</p>
-<p>下载镜像, 熟悉烧盘软件的使用, 烧盘</p>
-<p>烧盘选择向内部的存储器烧制, 而不是tf卡</p>
-<p>正常电脑架构是amd64, 安装 Ubuntu 1604 LTS 自行百度</p>
-<h3 id="1-1-镜像下载"><a href="#1-1-镜像下载" class="headerlink" title="1.1 镜像下载"></a>1.1 镜像下载</h3><p>使用x3399官网给的<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1dGsrPKH">百度网盘链接</a> 密码 ryim</p>
-<p>目录<code>/DVD_X3399/Image/x3399-ubuntu-2017-06-19</code></p>
-<p>下载后解压即可</p>
-<p>至此, 系统镜像已经准备好</p>
-<h3 id="1-2-进入刷机模式"><a href="#1-2-进入刷机模式" class="headerlink" title="1.2 进入刷机模式"></a>1.2 进入刷机模式</h3><p>在X3399中, <code>vol+</code> 为 <code>recover</code> 键 </p>
-<p>拔了电源线和usb_typeC线</p>
-<p>按住 <code>recover</code> 键的同时, 接上电源线和usb_typeC线</p>
-<p>屏幕会黑掉, 表示进入刷机模式成功</p>
-<h3 id="1-3-烧制系统"><a href="#1-3-烧制系统" class="headerlink" title="1.3 烧制系统"></a>1.3 烧制系统</h3><p>使用x3399官网给的 <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1dGsrPKH">百度网盘链接</a> 密码 ryim</p>
-<p>目录 <code>DVD_X3399/tools/x3399烧写工具/linux</code> </p>
-<p>下载 <code>Linux_Upgrade_Tool_v1.24.zip</code> 并解压</p>
-<p>这是我们要使用的烧制工具 <code>upgrade_tool</code></p>
-<p>终端直接 <code>cd</code> 到解压目录, 并运行 <code>./upgrade_tool</code> </p>
-<p>若失败, 可能是由于权限原因, 使用语句 <code>sudo chmod 777 ./upgrade_tool</code> 赋予权限</p>
-<p>再次运行 <code>./upgrade_tool</code> 若有报错</p>
-<p><code>error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or direcory</code></p>
-<p>说明缺少库文件, 使用 <code>sudo apt-get install libstdc++6</code> 和 <code>sudo apt-get install lib32stdc++6</code> 安装库</p>
-<p>再次使用 <code>./upgrade_tool</code> 应该可以成功使用烧制软件</p>
-<p>运行 <code>uf &lt;YourImgFile&gt;</code> 后者为 <code>.img</code> 的路径</p>
-<p>例如 <code>uf /home/rjp/tmp/upgrade_ubuntu.img</code> 等待烧制</p>
-<p>成功后, 系统会重启, Ubuntu便成功烧制到x3399开发板 </p>
-<p><a target="_blank" rel="noopener" href="http://bbs.elecfans.com/jishu_1310611_1_1.html">http://bbs.elecfans.com/jishu_1310611_1_1.html</a></p>
-<h2 id="2-配置Raccoon工作环境"><a href="#2-配置Raccoon工作环境" class="headerlink" title="2.配置Raccoon工作环境"></a>2.配置Raccoon工作环境</h2><p><font color=red><strong>amd64架构和arm64架构的机器配置环境的流程一模一样</strong></font></p>
-<p>依赖库有以下</p>
-<table>
-<thead>
-<tr>
-<th align="center">库</th>
-<th align="center">版本</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">Eigen</td>
-<td align="center">3.3.4</td>
-</tr>
-<tr>
-<td align="center">Cere-solver</td>
-<td align="center">1.13.0</td>
-</tr>
-<tr>
-<td align="center">Protobuf</td>
-<td align="center">3.4.1</td>
-</tr>
-<tr>
-<td align="center">Cartographer</td>
-<td align="center">1.0.0</td>
-</tr>
-<tr>
-<td align="center">Realsense</td>
-<td align="center">2.16.1</td>
-</tr>
-</tbody></table>
-<p><code>Realsense</code> 可以独立安装</p>
-<p>安装 <code>Cartographer</code> , 需要 <code>Ceres-solver</code> , <code>Protocolbuffers</code></p>
-<p>安装 <code>Ceres-solver</code> , 需要 <code>Eigen</code></p>
-<p><font color=red><strong>注意 Point-01</strong></font> </p>
-<p>为了获得lib, bin, share, include文件夹, 不建议直接安装到系统中</p>
-<p>在库的目录下</p>
-<pre><code>mkdir build
-cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=&lt;YourInstallPath&gt;
-make
-sudo make install</code></pre>
-<p>安装到制定路径</p>
-<p>编译 <code>Ceres-solver</code> , <code>Cartographer</code> 时, 会默认从系统查找依赖库</p>
-<p>需要再把需要的依赖库安装一次到系统上即可</p>
-<p>也就是 <code>Eigen</code> , <code>Ceres-solver</code> , <code>Protobuf</code> 需要在制定路径安装</p>
-<p>也需要在系统内部安装, 要安装两边</p>
-<pre><code class="cmake">cd build
-cmake .. -DCAME_INSTALL_PREFIX=/usr/local/
-make
-sudo make install</code></pre>
-<p><font color=red><strong>注意 Point-02</strong></font></p>
-<p>建议在编译安装每个库的的时候, 从其 <code>Github</code> 找对应版本的源码安装包</p>
-<p>并在 <code>README.md</code> 中, 查看其推荐的网址</p>
-<p>这类网址一般都有依赖库, 设备使用的条件等等关键信息</p>
-<p>自己写的教程基本都是参照其官网对应的说明文件</p>
-<p>若出现不明白的地方, 请自行查阅官网文档</p>
-<p><font color=red><strong>注意 Point-03</strong></font></p>
-<p>编译安装好的库需要在外部存贮器备份</p>
-<p>以防编译机子崩溃(内存太小), 循环启动, 无法开机</p>
-<p>此种问题只能通过刷机解决, 而刷机会格式化, 数据清空, 意味着之前安装好的库没了</p>
-<p>如果在外部存储设置中出现文件符号格式不支持, 先打包成 <code>.tar.gz</code> 再备份</p>
-<h3 id="2-1-Realsense编译安装"><a href="#2-1-Realsense编译安装" class="headerlink" title="2.1 Realsense编译安装"></a>2.1 Realsense编译安装</h3><p>版本 2.16.1 <a target="_blank" rel="noopener" href="https://github.com/IntelRealSense/librealsense/archive/v2.16.1.zip">下载链接</a> </p>
-<p>参考 <a target="_blank" rel="noopener" href="https://github.com/IntelRealSense/librealsense/releases">Realsense Github Release</a> </p>
-<p>​        <a target="_blank" rel="noopener" href="https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md">Realsense Manual Installation</a>  <a target="_blank" rel="noopener" href="https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md">Realsense Linux Distribution</a> </p>
-<p>​        <a target="_blank" rel="noopener" href="https://github.com/IntelRealSense/librealsense/wiki/Troubleshooting-Q&A#q-i-connected-the-camera-to-the-usb-port-but-it-is-not-recognized">官网Q&amp;A</a> </p>
-<ul>
-<li><p>需要安装的核心库</p>
-<p><code>sudo apt-get install git libssl-dev libusb-1.0-0-dev pkg-config libgtk-3-dev</code></p>
-<p><code>sudo apt-get install libglfw3-dev</code></p>
-</li>
-<li><p>编译安装</p>
-</li>
-<li><p>注意权限问题的解决</p>
-<pre><code class="cmake">sudo cp config/99-realsense-libusb.rules /etc/udev/rules.d/
-sudo udevadm control --reload-rules &amp;&amp; udevadm trigger</code></pre>
-</li>
-</ul>
-<h3 id="2-2-Eigen编译安装"><a href="#2-2-Eigen编译安装" class="headerlink" title="2.2 Eigen编译安装"></a>2.2 Eigen编译安装</h3><p>版本 3.3.4 <a target="_blank" rel="noopener" href="http://bitbucket.org/eigen/eigen/get/3.3.4.tar.bz2">下载链接</a></p>
-<p>参考 <a target="_blank" rel="noopener" href="http://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen 主页</a></p>
-<ul>
-<li>直接编译安装</li>
-</ul>
-<p>###　2.3 Ceres-solver编译安装</p>
-<p>版本 1.13.0 <a target="_blank" rel="noopener" href="https://github.com/ceres-solver/ceres-solver/releases/tag/1.13.0">下载链接</a></p>
-<p>参考 <a target="_blank" rel="noopener" href="https://github.com/ceres-solver/ceres-solver/releases">Cers-solver Github Release</a>  <a target="_blank" rel="noopener" href="http://ceres-solver.org/installation.html">Ceres-solver Installation</a></p>
-<ul>
-<li><p>依赖库安装</p>
-<pre><code class="cmake"># CMake
-sudo apt-get install cmake
-# google-glog + gflags
-sudo apt-get install libgoogle-glog-dev
-# BLAS &amp; LAPACK
-sudo apt-get install libatlas-base-dev
-# Eigen3
-sudo apt-get install libeigen3-dev
-# SuiteSparse and CXSparse (optional)
-# - If you want to build Ceres as a *static* library (the default)
-#   you can use the SuiteSparse package in the main Ubuntu package
-#   repository:
-sudo apt-get install libsuitesparse-dev
-# - However, if you want to build Ceres as a *shared* library, you must
-#   add the following PPA:
-sudo add-apt-repository ppa:bzindovic/suitesparse-bugfix-1319687
-sudo apt-get update
-sudo apt-get install libsuitesparse-dev</code></pre>
-<p>其中可以看到将 <code>SuiteSparse</code> 和 <code>CXSparse</code> 作为可选项</p>
-<p>本意是, <code>SuiteSparse</code> 库必须安装, 至于安装为何种形式, 看你自己</p>
-<p>在此, 我们默认安装为静态</p>
-<p>如果不安装, 后面cartographer的编译安装会提示你缺少 <code>SuiteSparse</code> 库, 就很难受</p>
-</li>
-<li><p>编译安装</p>
-</li>
-</ul>
-<h3 id="2-4-Protocolbuffers编译安装"><a href="#2-4-Protocolbuffers编译安装" class="headerlink" title="2.4 Protocolbuffers编译安装"></a>2.4 Protocolbuffers编译安装</h3><p>版本 3.4.1 <a target="_blank" rel="noopener" href="https://github.com/protocolbuffers/protobuf/archive/v3.4.1.zip">下载链接</a></p>
-<p>参考 <a target="_blank" rel="noopener" href="https://github.com/protocolbuffers/protobuf/releases">Protobuf Github Release</a>  <a target="_blank" rel="noopener" href="https://github.com/protocolbuffers/protobuf/blob/master/src/README.md">Protobuf Installation</a></p>
-<ul>
-<li><p>依赖库安装</p>
-<pre><code>sudo apt-get install autoconf automake libtool curl make unzip</code></pre>
-</li>
-<li><p>编译安装</p>
-<pre><code class="cmake"># 官网编译安装方式 rviz在使用的时候会出问题
-# 找到的原因是Protobuf的编译方式有问题
-# 可能是某些不必要的库影响了rviz的某功能
-
-# # 如果命令不能自动补全
-# # 使用 sudo chmod 777 &lt;filename&gt; 赋予权限
-
-# # 进行此步是为了./configure可行
-# ./autogen.sh 
-# # 可在后面加入 --prefix 来设置安装路径
-# ./configure --prefix=&lt;YourInstallPath&gt;
-# make
-# make check    # 时间紧迫就不要check了
-# sudo make install
-# sudo ldconfig    # refresh shared library cache.
-
-</code></pre>
-</li>
-</ul>
-<h1 id="使用cmake更加可控"><a href="#使用cmake更加可控" class="headerlink" title="使用cmake更加可控"></a>使用cmake更加可控</h1><h1 id="在此编译方式更加适合项目"><a href="#在此编译方式更加适合项目" class="headerlink" title="在此编译方式更加适合项目"></a>在此编译方式更加适合项目</h1><p>  mkdir install<br>  cmake ../cmake/ -DCMAKE_BUILD_TYPE=Release -Dprotobuf_BUILD_TESTS=OFF -DCMAKE_INSTALL_PREFIX=<YourInstallPath><br>  make<br>  make install</p>
-<pre><code>
-所遇到问题 `make check` 步骤出现错误
-
-&gt; fail: google/protobuf/compiler/zip_output_unittest.sh
-&gt;
-&gt; fail: google/protobuf/io/gzip_stream_unittest.sh
-
-不知道怎么解决
-
-根据 [csdn 网址](https://blog.csdn.net/ShaoDu/article/details/85256797) 博主指出可能是版本问题, 重新来一遍就没有问题
-
-19:43 - 20:14 make finished
-
-20:14 - 20:55 make check finished
-
-之前使用 `Protobuf-3.4.1` 失败
-
-现在使用 `Protobuf-cpp-3.4.1` 成功
-
-并不能解释原因, 猜想是因为安装包的问题所以成功
-
-第二遍安装到系统的时候, 会报错
-
-
-### 2.5 Cartographer编译安装
-
-版本 1.0.0 [下载链接](https://github.com/googlecartographer/cartographer/archive/1.0.0.zip)
-
-参考 [Cartographer Github Release](https://github.com/googlecartographer/cartographer/releases)  [Cartographer Document Installation](https://google-cartographer.readthedocs.io/en/latest/) 
-
-- 安装依赖库
-
-```cmake
-sudo apt-get install -y \
-    clang \
-    g++ \
-    git \
-    google-mock \
-    libboost-all-dev \
-    libcairo2-dev \
-    libcurl4-openssl-dev \
-    libeigen3-dev \
-    libgflags-dev \
-    libgoogle-glog-dev \
-    liblua5.2-dev \
-    libsuitesparse-dev \
-    ninja-build \
-    python-sphinx</code></pre>
-<ul>
-<li>正常编译安装</li>
-</ul>
-<h3 id="2-6-安装ROS"><a href="#2-6-安装ROS" class="headerlink" title="2.6 安装ROS"></a>2.6 安装ROS</h3><p>参考 <a target="_blank" rel="noopener" href="http://wiki.ros.org/cn/kinetic/Installation/Ubuntu">官方 wiki</a></p>
-<pre><code class="cmake"># 添加 sources.list
-sudo sh -c &#39;echo &quot;deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list&#39;
-
-# 添加 keys
-sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
-
-# 安装
-sudo apt-get update
-sudo apt-get install ros-kinetic-desktop-full
-
-# 初始化 rosdep
-sudo rosdep init
-rosdep update
-
-# 环境配置
-echo &quot;source /opt/ros/kinetic/setup.bash&quot; &gt;&gt; ~/.bashrc
-source ~/.bashrc
-
-# 构建工厂依赖
-sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential</code></pre>
+                <h1 id="啊啊啊啊啊"><a href="#啊啊啊啊啊" class="headerlink" title="啊啊啊啊啊"></a>啊啊啊啊啊</h1><p>今早正在看论文, 突然听见坡坡师兄责问彭博进度. 对话大致如此:</p>
+<p>“仿真做的怎么样了?” “做完了.” “那让我看看.” “现在没整合. 已经有了明确的开发计划.” “那你到底做完没有?” “做完了, 已经知道要干什么了.” “那你就是没做完.” “但已经有计划了呀!” “那就是没做完啊.” “我才做了两个星期.” “你明明已经做了快两个月了.” “两个月有其他的事情.” “那没整合还是没做完.”</p>
+<p>彭博什么都做一点, 但什么都做不完. 师兄分配任务, 为了gazebo参数的可扩展性, 建议使用sdf而非urdf或是xacro搭建小车模型. 谢老师糊里糊涂地演示, 见怪不怪. </p>
+<p>下午和一申讨论怎么改成sdf和具体要注意的细节, 我看看怎么打包环境成docker. </p>
+<p>无聊的工作开始了.</p>
+<p>嗓子的疼痛慢慢淡去, 流鼻涕, 咳嗽纷至沓来. 等身体完全康复也不知何年何月.</p>
+<p>好了真想去游泳池来几圈. 我太难了.</p>
+<hr>
+<p>八点半人脸会议, 老张没有让我参加. 本来挺开心, 瞄了眼人脸群里发的季度工作计划, 直觉告诉我, 老张不想让我参加这个会的原因, 并非不想让我再碰人脸. 而是不想让我了解他身为企业家丑恶, 肮脏,欺诈的一面. 罢了罢了, 专心无人车.</p>
+<p>李总测绘局实习捷报频传. 广州测绘院工作五年没有编制的一年24万. 除了国庆赶项目, 晚上八点下班, 955的生活, 我好羡慕.</p>
+<p>收集信息, 规划未来.</p>
 
             </div>
             <hr/>
@@ -609,7 +380,7 @@ sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://rjjxp.github.io/2018/12/07/x3399-setup/">https://rjjxp.github.io/2018/12/07/x3399-setup/</a>
+                    <a href="https://rjjxp.github.io/2020/08/12/20200812/">https://rjjxp.github.io/2020/08/12/20200812/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -651,8 +422,12 @@ sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool
                                     <span class="chip bg-color">嘉定</span>
                                 </a>
                             
-                                <a href="/tags/%E5%A4%A7%E5%9B%9B/">
-                                    <span class="chip bg-color">大四</span>
+                                <a href="/tags/%E7%A0%94%E4%B8%80/">
+                                    <span class="chip bg-color">研一</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%9A%91%E5%81%87/">
+                                    <span class="chip bg-color">暑假</span>
                                 </a>
                             
                         </div>
@@ -697,7 +472,7 @@ sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool
         repo: 'rjjxp.github.io',
         owner: 'rjjxp',
         admin: "rjjxp",
-        id: '2018-12-07T09-25-00',
+        id: '2020-08-12T16-02-49',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -721,29 +496,88 @@ sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/08/03/20200803/">
+                <a href="/2020/08/12/20200812/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="20200803_day">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="师兄开始抓仿真">
                         
-                        <span class="card-title">20200803_day</span>
+                        <span class="card-title">师兄开始抓仿真</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            记录记录心情
+                            嗓子渐渐不疼了
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-03
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%97%A5%E8%AE%B0/" class="post-category">
+                                    日记
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%98%89%E5%AE%9A/">
+                        <span class="chip bg-color">嘉定</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%A0%94%E4%B8%80/">
+                        <span class="chip bg-color">研一</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%9A%91%E5%81%87/">
+                        <span class="chip bg-color">暑假</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/08/11/20200811/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/32.jpg" class="responsive-img" alt="糊涂周二">
+                        
+                        <span class="card-title">糊涂周二</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            嗓子好了很多
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -769,60 +603,6 @@ sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool
                     
                     <a href="/tags/%E6%9A%91%E5%81%87/">
                         <span class="chip bg-color">暑假</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2018/12/07/x3399-setup/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="X3399环境配置">
-                        
-                        <span class="card-title">X3399环境配置</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            基于X3399 arm64架构的工作环境部署
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-12-07
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%B7%A5%E4%BD%9C/" class="post-category">
-                                    工作
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%98%89%E5%AE%9A/">
-                        <span class="chip bg-color">嘉定</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%A4%A7%E5%9B%9B/">
-                        <span class="chip bg-color">大四</span>
                     </a>
                     
                 </div>
